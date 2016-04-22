@@ -2,7 +2,7 @@
 
 namespace CodeFirstToANewDatabase
 {
-	public class Blog
+	internal class Blog
 	{
 		public int BlogId { get; set; }
 		public string Name { get; set; }

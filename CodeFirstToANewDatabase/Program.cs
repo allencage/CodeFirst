@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Linq;
 using System.Data.Entity;
+using System.Linq;
 
 namespace CodeFirstToANewDatabase
 {
-	class Program
+	internal class Program
 	{
-		static void Main(string[] args)
+		private static void Main(string[] args)
 		{
 			using (var db = new BloggingContext())
 			{
@@ -31,13 +31,11 @@ namespace CodeFirstToANewDatabase
 
 				Console.WriteLine("\nPress any key to exit... ");
 				Console.ReadKey();
-
 			}
-
 		}
 	}
 
-	class BloggingContext : DbContext
+	internal class BloggingContext : DbContext
 	{
 		public DbSet<Blog> Blogs { get; set; }
 		public DbSet<Post> Posts { get; set; }

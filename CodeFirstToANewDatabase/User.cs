@@ -2,7 +2,7 @@
 
 namespace CodeFirstToANewDatabase
 {
-	public class User
+	internal class User
 	{
 		[Key]
 		public string Username { get; set; }
